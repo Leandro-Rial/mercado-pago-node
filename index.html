@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    />
+
+    <title>Mercado Pago</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="display-2 text-center pb-5">Productos</h2>
+      <div class="row">
+        <div class="col-md-6 offset-3">
+          <div class="card">
+            <div class="card-header">
+              <h3>ASUS x509</h3>
+            </div>
+            <div class="card-body">
+              <img
+                src="/img/ASUSX509.jpg"
+                alt="Notebook asus x509"
+                style="width: 100%"
+              />
+              <hr />
+              <h4>Description</h4>
+              <p>
+                With its 8th Gen Intel® Core™ processor and NVIDIA® MX graphics,
+                ASUS X509 helps you get things done swiftly and efficiently.
+              </p>
+              <hr />
+              <h5>Precio $ 2500</h5>
+              <div>
+                <form action="http://localhost:5000/checkout" class="pt-3" method="POST" >
+
+                  <input type="hidden" name="title" value="ASUS x509" >
+
+                  <input type="hidden" name="price" value="2500" >
+
+                  <input
+                    type="submit"
+                    value="Comprar ahora"
+                    class="btn btn-primary btn-block"
+                  />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
